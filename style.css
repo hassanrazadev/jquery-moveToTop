@@ -1,0 +1,18 @@
+.container{
+    max-width: 100%;
+    padding: 20px;
+}
+
+.container ul.items-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container ul.items-list li{
+    border: 1px solid #000;
+    max-width: 200px;
+    margin-bottom: 5px;
+    padding: 15px;
+    background-color: cadetblue;
+    color: #ffffff;
+}

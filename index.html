@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="jquery move-to-top plugin">
+    <meta name="author" content="Hassan Raza">
+    <title>jQuery - MoveToTop</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>jQuery Move To Top Plugin (Demo)</h1>
+    <h3>Click on any item to move top.</h3>
+    <ul class="items-list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+    </ul>
+    <h3>Github Repo & Documentation: <a target="_blank" href="https://github.com/hassanrazadev/jquery-moveToTop">https://github.com/hassanrazadev/jquery-moveToTop</a></h3>
+    <h2 style="margin-top: 20px">Developed By: <a target="_blank" href="https://hassanraza.net">Hassan Raza</a></h2>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="moveToTop.js"></script>
+<script type="text/javascript">
+    $('.item').on('click', function () {
+        $(this).moveToTop({
+            target: $('.items-list .item:first-child'),
+            speed: 500,
+            opacity: 0.8,
+            start: function () {
+                console.log('Animation Start...');
+            },
+            end: function () {
+                console.log('Animation End...');
+            }
+        });
+    })
+</script>
+</body>
+</html>
