@@ -59,3 +59,5 @@ $(element).moveToTop({ // element: which element to move top. (mandatory)
     }
 });
 ```
+### License
+Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
